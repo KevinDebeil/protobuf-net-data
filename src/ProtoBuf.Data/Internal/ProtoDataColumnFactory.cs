@@ -60,7 +60,7 @@ namespace ProtoBuf.Data.Internal
 
                         if (IsRunningOnMono)
                         {
-                            isComputedColumn = Equals(row["Expression"], string.Empty);
+                            isComputedColumn = !Equals(row["Expression"], string.Empty);
                         }
                         else
                         {
